@@ -1,0 +1,646 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-6673429333525654113
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6b480ce39d8130147b767724cc970e30, type: 3}
+  m_Name: Army
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: 392, y: 120}
+  ports:
+    keys:
+    - swipeRight
+    - swipeLeft
+    - leftInput
+    - output
+    - rightInput
+    values:
+    - _fieldName: swipeRight
+      _node: {fileID: -6673429333525654113}
+      _typeQualifiedName: BaseNode, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections:
+      - fieldName: enter
+        node: {fileID: 1020364219607812419}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 1
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: swipeLeft
+      _node: {fileID: -6673429333525654113}
+      _typeQualifiedName: BaseNode, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections:
+      - fieldName: enter
+        node: {fileID: 6663600770090969272}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 1
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: leftInput
+      _node: {fileID: -6673429333525654113}
+      _typeQualifiedName: BaseNode, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections:
+      - fieldName: exit
+        node: {fileID: -2571187538667245603}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: output
+      _node: {fileID: -6673429333525654113}
+      _typeQualifiedName: BaseNode, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections: []
+      _direction: 1
+      _connectionType: 1
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: rightInput
+      _node: {fileID: -6673429333525654113}
+      _typeQualifiedName: BaseNode, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections:
+      - fieldName: exit
+        node: {fileID: 4197490504246121186}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  output: {fileID: 0}
+  question: Your army general requests funds for better equipment. How do you respond?
+  cardIcon: {fileID: 0}
+  leftInput: {fileID: 0}
+  rightInput: {fileID: 0}
+  swipeLeft: {fileID: 6663600770090969272}
+  swipeRight: {fileID: 1020364219607812419}
+--- !u!114 &-5851513092786244732
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6b480ce39d8130147b767724cc970e30, type: 3}
+  m_Name: Start
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: -911, y: -19.5}
+  ports:
+    keys:
+    - swipeRight
+    - swipeLeft
+    - leftInput
+    - output
+    - rightInput
+    values:
+    - _fieldName: swipeRight
+      _node: {fileID: -5851513092786244732}
+      _typeQualifiedName: BaseNode, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections:
+      - fieldName: enter
+        node: {fileID: -5325115229466071346}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 1
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: swipeLeft
+      _node: {fileID: -5851513092786244732}
+      _typeQualifiedName: BaseNode, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections:
+      - fieldName: enter
+        node: {fileID: -5671648808604426679}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 1
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: leftInput
+      _node: {fileID: -5851513092786244732}
+      _typeQualifiedName: BaseNode, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: output
+      _node: {fileID: -5851513092786244732}
+      _typeQualifiedName: BaseNode, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections: []
+      _direction: 1
+      _connectionType: 1
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: rightInput
+      _node: {fileID: -5851513092786244732}
+      _typeQualifiedName: BaseNode, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  output: {fileID: 0}
+  question: ' Welcome to your kingdom! A group of villagers seeks your aid. Will
+    you help them?
+
+'
+  cardIcon: {fileID: 0}
+  leftInput: {fileID: 0}
+  rightInput: {fileID: 0}
+  swipeLeft: {fileID: -5671648808604426679}
+  swipeRight: {fileID: -5325115229466071346}
+--- !u!114 &-5671648808604426679
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c79ca5ac62f12aa48b7409446b2e78a3, type: 3}
+  m_Name: StartLeft
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: -600, y: -200}
+  ports:
+    keys:
+    - enter
+    - exit
+    - output
+    values:
+    - _fieldName: enter
+      _node: {fileID: -5671648808604426679}
+      _typeQualifiedName: BaseNode, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections:
+      - fieldName: swipeLeft
+        node: {fileID: -5851513092786244732}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 1
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: exit
+      _node: {fileID: -5671648808604426679}
+      _typeQualifiedName: BaseNode, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections:
+      - fieldName: leftInput
+        node: {fileID: 5941080917620472333}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 1
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: output
+      _node: {fileID: -5671648808604426679}
+      _typeQualifiedName: BaseNode, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections: []
+      _direction: 1
+      _connectionType: 1
+      _typeConstraint: 0
+      _dynamic: 0
+  output: {fileID: 0}
+  outcomeText: You refuse to help the villagers. They leave the kingdom in disappointment,
+    spreading rumors about your cruelty.
+  goldChange: 10
+  peopleChange: -5
+  armyChange: 0
+  churchChange: 0
+  enter: {fileID: -5851513092786244732}
+  exit: {fileID: 0}
+--- !u!114 &-5325115229466071346
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c79ca5ac62f12aa48b7409446b2e78a3, type: 3}
+  m_Name: StartRight
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: -600, y: 120}
+  ports:
+    keys:
+    - enter
+    - exit
+    - output
+    values:
+    - _fieldName: enter
+      _node: {fileID: -5325115229466071346}
+      _typeQualifiedName: BaseNode, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections:
+      - fieldName: swipeRight
+        node: {fileID: -5851513092786244732}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 1
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: exit
+      _node: {fileID: -5325115229466071346}
+      _typeQualifiedName: BaseNode, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections:
+      - fieldName: rightInput
+        node: {fileID: 5941080917620472333}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 1
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: output
+      _node: {fileID: -5325115229466071346}
+      _typeQualifiedName: BaseNode, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections: []
+      _direction: 1
+      _connectionType: 1
+      _typeConstraint: 0
+      _dynamic: 0
+  output: {fileID: 0}
+  outcomeText: You generously help the villagers with food and gold. They are eternally
+    grateful and become your loyal subjects!
+  goldChange: -5
+  peopleChange: 10
+  armyChange: 0
+  churchChange: 0
+  enter: {fileID: 0}
+  exit: {fileID: 0}
+--- !u!114 &-2571187538667245603
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c79ca5ac62f12aa48b7409446b2e78a3, type: 3}
+  m_Name: ChurchLeft
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: -24, y: -200}
+  ports:
+    keys:
+    - enter
+    - exit
+    - output
+    values:
+    - _fieldName: enter
+      _node: {fileID: -2571187538667245603}
+      _typeQualifiedName: BaseNode, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections:
+      - fieldName: swipeLeft
+        node: {fileID: 5941080917620472333}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 1
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: exit
+      _node: {fileID: -2571187538667245603}
+      _typeQualifiedName: BaseNode, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections:
+      - fieldName: leftInput
+        node: {fileID: -6673429333525654113}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 1
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: output
+      _node: {fileID: -2571187538667245603}
+      _typeQualifiedName: BaseNode, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections: []
+      _direction: 1
+      _connectionType: 1
+      _typeConstraint: 0
+      _dynamic: 0
+  output: {fileID: 0}
+  outcomeText: You refuse the church's demand. The priests are furious and spread
+    blasphemous rumors about you across the kingdom.
+  goldChange: 0
+  peopleChange: -5
+  armyChange: 0
+  churchChange: -15
+  enter: {fileID: 0}
+  exit: {fileID: 0}
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 47b40c9ed04d75246a135818bdd151c3, type: 3}
+  m_Name: GameGraph1
+  m_EditorClassIdentifier: 
+  nodes:
+  - {fileID: -5851513092786244732}
+  - {fileID: -5671648808604426679}
+  - {fileID: -5325115229466071346}
+  - {fileID: 5941080917620472333}
+  - {fileID: -2571187538667245603}
+  - {fileID: 4197490504246121186}
+  - {fileID: -6673429333525654113}
+  - {fileID: 1020364219607812419}
+  - {fileID: 6663600770090969272}
+--- !u!114 &1020364219607812419
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c79ca5ac62f12aa48b7409446b2e78a3, type: 3}
+  m_Name: ArmyRight
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: 680, y: 296}
+  ports:
+    keys:
+    - enter
+    - exit
+    - output
+    values:
+    - _fieldName: enter
+      _node: {fileID: 1020364219607812419}
+      _typeQualifiedName: BaseNode, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections:
+      - fieldName: swipeRight
+        node: {fileID: -6673429333525654113}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 1
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: exit
+      _node: {fileID: 1020364219607812419}
+      _typeQualifiedName: BaseNode, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections: []
+      _direction: 1
+      _connectionType: 1
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: output
+      _node: {fileID: 1020364219607812419}
+      _typeQualifiedName: BaseNode, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections: []
+      _direction: 1
+      _connectionType: 1
+      _typeConstraint: 0
+      _dynamic: 0
+  output: {fileID: 0}
+  outcomeText: You approve the funding. The army receives new weapons and armor.
+    The general pledges eternal loyalty to you!
+  goldChange: -20
+  peopleChange: 0
+  armyChange: 15
+  churchChange: 0
+  enter: {fileID: 0}
+  exit: {fileID: 0}
+--- !u!114 &4197490504246121186
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c79ca5ac62f12aa48b7409446b2e78a3, type: 3}
+  m_Name: ChurchRight
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: 24, y: 216}
+  ports:
+    keys:
+    - enter
+    - exit
+    - output
+    values:
+    - _fieldName: enter
+      _node: {fileID: 4197490504246121186}
+      _typeQualifiedName: BaseNode, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections:
+      - fieldName: swipeRight
+        node: {fileID: 5941080917620472333}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 1
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: exit
+      _node: {fileID: 4197490504246121186}
+      _typeQualifiedName: BaseNode, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections:
+      - fieldName: rightInput
+        node: {fileID: -6673429333525654113}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 1
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: output
+      _node: {fileID: 4197490504246121186}
+      _typeQualifiedName: BaseNode, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections: []
+      _direction: 1
+      _connectionType: 1
+      _typeConstraint: 0
+      _dynamic: 0
+  output: {fileID: 0}
+  outcomeText: You donate generously to the church. The priests bless you and declare
+    you 'The Faithful Ruler'.
+  goldChange: -15
+  peopleChange: 0
+  armyChange: 0
+  churchChange: 15
+  enter: {fileID: 0}
+  exit: {fileID: 0}
+--- !u!114 &5941080917620472333
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6b480ce39d8130147b767724cc970e30, type: 3}
+  m_Name: Church
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: -296, y: 72}
+  ports:
+    keys:
+    - swipeRight
+    - swipeLeft
+    - leftInput
+    - output
+    - rightInput
+    values:
+    - _fieldName: swipeRight
+      _node: {fileID: 5941080917620472333}
+      _typeQualifiedName: BaseNode, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections:
+      - fieldName: enter
+        node: {fileID: 4197490504246121186}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 1
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: swipeLeft
+      _node: {fileID: 5941080917620472333}
+      _typeQualifiedName: BaseNode, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections:
+      - fieldName: enter
+        node: {fileID: -2571187538667245603}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 1
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: leftInput
+      _node: {fileID: 5941080917620472333}
+      _typeQualifiedName: BaseNode, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections:
+      - fieldName: exit
+        node: {fileID: -5671648808604426679}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: output
+      _node: {fileID: 5941080917620472333}
+      _typeQualifiedName: BaseNode, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections: []
+      _direction: 1
+      _connectionType: 1
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: rightInput
+      _node: {fileID: 5941080917620472333}
+      _typeQualifiedName: BaseNode, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections:
+      - fieldName: exit
+        node: {fileID: -5325115229466071346}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  output: {fileID: 0}
+  question: The church demands a large donation for the upcoming festival. What do
+    you do?
+  cardIcon: {fileID: 0}
+  leftInput: {fileID: 0}
+  rightInput: {fileID: 0}
+  swipeLeft: {fileID: -2571187538667245603}
+  swipeRight: {fileID: 4197490504246121186}
+--- !u!114 &6663600770090969272
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c79ca5ac62f12aa48b7409446b2e78a3, type: 3}
+  m_Name: ArmyLeft
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: 648, y: -104}
+  ports:
+    keys:
+    - enter
+    - exit
+    - output
+    values:
+    - _fieldName: enter
+      _node: {fileID: 6663600770090969272}
+      _typeQualifiedName: BaseNode, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections:
+      - fieldName: swipeLeft
+        node: {fileID: -6673429333525654113}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 1
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: exit
+      _node: {fileID: 6663600770090969272}
+      _typeQualifiedName: BaseNode, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections: []
+      _direction: 1
+      _connectionType: 1
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: output
+      _node: {fileID: 6663600770090969272}
+      _typeQualifiedName: BaseNode, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections: []
+      _direction: 1
+      _connectionType: 1
+      _typeConstraint: 0
+      _dynamic: 0
+  output: {fileID: 0}
+  outcomeText: You refuse to fund the army. The general is insulted, and soldiers
+    begin deserting their posts.
+  goldChange: 10
+  peopleChange: 0
+  armyChange: -15
+  churchChange: 0
+  enter: {fileID: 0}
+  exit: {fileID: 0}
